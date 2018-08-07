@@ -656,6 +656,13 @@ def bot(op):
                                     vipro.sendText(op.param1, "Astagfirulloh, Ada " + "╩╦ " + Name + " ╦╩" + "\nNongol\nKabur Aah Daripada Di Bajak Tikel")
                                     time.sleep(0.2)
                                     summon(op.param1,[op.param2])
+                                    msg.contentType = 7   
+                                    msg.text = None
+                                    msg.contentMetadata={'STKID': '14',
+                                                         'STKPKGID': '1',
+                                                         'STKVER': '100'}
+                                    msg.text = None
+                                    vipro.sendMessage(msg)
                         else:
                             pass
                     else:
@@ -935,6 +942,13 @@ def bot(op):
                      for mention in mentionees:
                            if mention['M'] in Bots:
                                   vipro.sendText(msg.to,ret_)
+                                  msg.contentType = 7   
+                                  msg.text = None
+                                  msg.contentMetadata={'STKID': '46773857',
+                                                       'STKPKGID': '3588478',
+                                                       'STKVER': '1'}
+                                  msg.text = None
+                                  vipro.sendMessage(msg)
                                   break   
                               
             if 'MENTION' in msg.contentMetadata.keys() != None:
@@ -951,9 +965,9 @@ def bot(op):
                                   vipro.sendText(msg.to,ret_)
                                   msg.contentType = 7   
                                   msg.text = None
-                                  msg.contentMetadata={'STKID': '14',
-                                                       'STKPKGID': '1',
-                                                       'STKVER': '100'}
+                                  msg.contentMetadata={'STKID': '46773857',
+                                                       'STKPKGID': '3588478',
+                                                       'STKVER': '1'}
                                   msg.text = None
                                   vipro.sendMessage(msg)                                
                                   break
@@ -976,10 +990,10 @@ def bot(op):
                                   vipro.sendImageWithURL(msg.to,image)
                                   msg.contentType = 7   
                                   msg.text = None
-                                  msg.contentMetadata = {
-                                                       "STKID": "11764508",
-                                                       "STKPKGID": "6641",
-                                                       "STKVER": "1" }
+                                  msg.contentMetadata={'STKID': '46773857',
+                                                       'STKPKGID': '3588478',
+                                                       'STKVER': '1'}
+                                  msg.text = None
                                   vipro.sendMessage(msg)                                
                                   break  
                                   
