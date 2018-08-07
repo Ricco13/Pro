@@ -1319,9 +1319,23 @@ def bot(op):
                      for mention in mentionees:
                            if mention['M'] in admin:
                                   cl.sendText(msg.to,ret_)
+                                  msg.contentType = 7   
+                                  msg.text = None
+                                  msg.contentMetadata={'STKID': '46773857',
+                                                       'STKPKGID': '3588478',
+                                                       'STKVER': '1'}
+                                  msg.text = None
+                                  vipro.sendMessage(msg)
                                   break                                  
                            if mention['M'] in Bots:
                                   cl.sendText(msg.to,ret_)
+                                  msg.contentType = 7   
+                                  msg.text = None
+                                  msg.contentMetadata={'STKID': '46773857',
+                                                       'STKPKGID': '3588478',
+                                                       'STKVER': '1'}
+                                  msg.text = None
+                                  vipro.sendMessage(msg)
                                   break   
 
             if msg.contentType == 13:
